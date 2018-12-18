@@ -4,15 +4,15 @@
 
 /* header */
 .header {
-  background-image: url(../img/bg.png);
-  background-position-x: center;
-  background-repeat: no-repeat;
-  height: 670px;
-  background-color: #1e1b3f;
+  min-height: 670px;
+  background: url(../img/bg.png) no-repeat center center;
+  display: block;
+  background-size: cover;
+  text-align: center;
 }
 
 .fixed-top.scrolled {
-  background-color: #342b57 !important;
+  background-color: rgba(52, 43, 87, .8) !important;
   transition: background-color .2s ease-in-out;
   border-bottom: 1px solid rgba(0, 224, 208, .2);
 }
@@ -108,12 +108,11 @@
 
 /* our story video */
 .our-story-video {
-  background-image: url(../img/PUT_YOUR_IMAGE_HERE.png);
-  background-position-x: center;
-  background-repeat: no-repeat;
-  height: 550px;
-  padding-top: 202px;
-  background-color: #1e1b3f;
+  min-height: 550px; 
+  background: url(../img/PUT_YOUR_IMAGE_HERE.png) no-repeat center center;
+  display: block;
+  background-size: cover;
+  text-align: center;
 }
 
 .our-story-video__block-flex {
@@ -125,14 +124,14 @@
 /* expertise */
 .expertise {
   padding-top: 72px;
-  padding-bottom: 72px;  
+  padding-bottom: 72px;
 }
 
-.line-bottom{
+.line-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
-.line-right{
+.line-right {
   border-right: 1px solid rgba(0, 0, 0, .1);
 }
 
@@ -143,13 +142,79 @@
   opacity: 0.3;
 }
 
-.card .card-title{
+.card .card-title {
   text-align: center;
 }
 
-.card p{
+.card p {
   text-align: center;
   max-width: 254px;
+}
+
+/* team */
+.team {
+  background: url(../img/bg-team.png) no-repeat center center;
+  display: block;
+  padding-top: 70px;
+  background-size: cover;
+  text-align: center;
+}
+
+.team h1 {
+  color: #ffffff;
+}
+
+.team p {
+  color: #ffffff;
+}
+
+.team .exp-line {
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+/* .card-deck .card {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.card-deck .card h5 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+} */
+
+figure img {
+  width: 100%;
+}
+
+figure figcaption {
+  border: 1px solid rgba(255, 255, 255, .5);
+  text-align: center;
+}
+
+figcaption h5 {
+  color: #ffffff;
+}
+
+.team-but {
+  margin-top: 70px;
+}
+
+.team-but .btn {
+  margin-bottom: 127px;
+  color: rgba(0, 224, 208, 1);
+  border: 1px solid rgba(0, 224, 208, 1);
+}
+
+.team-but .btn:hover {
+  margin-bottom: 127px;
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 224, 208, 1);
 }
 
 /* общее */
@@ -261,12 +326,17 @@ p {
     text-align: center;
   }
 
-  .line-bottom{
+  .line-bottom {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
-  
-  .line-right{
+
+  .line-right {
     border-right: none;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
+
+  /* .card-deck {
+    flex-direction: row;
+    flex-wrap: wrap;
+  } */
 }
