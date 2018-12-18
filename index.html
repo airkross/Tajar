@@ -102,7 +102,7 @@
 
   <!-- Content -->
   <content class="content" id="content">
-  <!-- our story -->
+    <!-- our story -->
     <section class="our-story" id="our-story">
       <div class="container">
         <div class="row">
@@ -129,17 +129,35 @@
         </div>
       </div>
     </section>
+    <!-- our-story-video -->
     <section class="our-story-video" id="our-story-video">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            
+        <div class="row ">
+          <div class="col-12 d-flex justify-content-center">
+            <!-- видео -->
+            <div class="our-story-video__block-flex" data-toggle="modal" data-target=".bd-example-modal-lg">
+              <div class="our-story-video__block-img mb-4">
+                <img src="img/play.png" alt="Play" class="img-fluid">
+              </div>
+              <h3><strong>Wathc our story</strong></h3>
+            </div>
+            <!-- модальное окно -->
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="embed-responsive embed-responsive-21by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8CdcCD5V-d8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!--  -->
   </content>
-
 
   <!-- add bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -154,3 +172,4 @@
 </body>
 
 </html>
+
