@@ -8,6 +8,7 @@
   background-position-x: center;
   background-repeat: no-repeat;
   height: 670px;
+  background-color: #1e1b3f;
 }
 
 .fixed-top.scrolled {
@@ -107,18 +108,49 @@
 }
 
 /* our story video */
-.our-story-video__block-flex{
-  text-align: center;
-  width: 160px;
-  cursor: pointer;
-}
-
 .our-story-video {
   background-image: url(../img/PUT_YOUR_IMAGE_HERE.png);
   background-position-x: center;
   background-repeat: no-repeat;
   height: 550px;
   padding-top: 202px;
+  background-color: #1e1b3f;
+}
+
+.our-story-video__block-flex {
+  text-align: center;
+  width: 160px;
+  cursor: pointer;
+}
+
+/* expertise */
+.expertise {
+  padding-top: 72px;
+  padding-bottom: 72px;  
+}
+
+.line-bottom{
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.line-right{
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.exp-line {
+  width: 50px;
+  height: 2px;
+  background-color: #413d4b;
+  opacity: 0.3;
+}
+
+.card .card-title{
+  text-align: center;
+}
+
+.card p{
+  text-align: center;
+  max-width: 254px;
 }
 
 /* общее */
@@ -228,5 +260,14 @@ p {
 
   .our-story__block-flex {
     text-align: center;
+  }
+
+  .line-bottom{
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  }
+  
+  .line-right{
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
 }
