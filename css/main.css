@@ -108,7 +108,7 @@
 
 /* our story video */
 .our-story-video {
-  min-height: 550px; 
+  min-height: 550px;
   background: url(../img/PUT_YOUR_IMAGE_HERE.png) no-repeat center center;
   display: block;
   background-size: cover;
@@ -217,6 +217,46 @@ figcaption h5 {
   border: 1px solid rgba(0, 224, 208, 1);
 }
 
+/* our-works */
+.our-works a {
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.our-works a {
+  color: #413d4b;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.our-works a:hover {
+  color: rgba(0, 224, 208, 1);
+}
+
+.our-works__link {
+  align-items: baseline;
+}
+
+.our-works img {
+  width: 100%;
+}
+
+.our-works__btn {
+  text-align: center;
+}
+
+.our-works__btn .btn {
+  color: rgba(0, 224, 208, 1);
+  border: 1px solid rgba(0, 224, 208, 1);
+  font-weight: 500;
+}
+
+.our-works__btn .btn:hover {
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 224, 208, 1);
+}
+
+
 /* общее */
 h1 {
   /* Style for "OUR STORY" */
@@ -295,6 +335,12 @@ p {
 
   .carousel-item p {
     max-width: 410px;
+  }
+
+  .our-works__position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
