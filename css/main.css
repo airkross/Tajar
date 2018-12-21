@@ -37,6 +37,7 @@
   width: 100%;
 }
 
+/* header slider */
 .slider {
   padding-top: 200px;
 }
@@ -72,11 +73,23 @@
   border: 1px solid rgba(0, 224, 208, 1);
 }
 
-.carousel-item .btn:hover {
+.slider .carousel-item .btn:hover {
   margin-bottom: 127px;
   margin-top: 50px;
   color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(0, 224, 208, 1);
+}
+
+.slider .carousel-indicators li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, .4);
+}
+
+.slider .carousel-indicators .active {
+  background-color: #00e0d0;
 }
 
 /* content */
@@ -175,18 +188,6 @@
   opacity: 0.2;
 }
 
-/* .card-deck .card {
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid rgba(255, 255, 255, .3);
-}
-
-.card-deck .card h5 {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-} */
-
 figure img {
   width: 100%;
 }
@@ -256,6 +257,88 @@ figcaption h5 {
   border: 1px solid rgba(0, 224, 208, 1);
 }
 
+/* testimonials */
+.testimonials {
+  background: url(../img/bg-comets.png) no-repeat center center;
+  display: block;
+  padding-top: 70px;
+  background-size: cover;
+  text-align: center;
+  min-height: 500px;
+}
+
+.testimonials__start {
+  /* Style for "“" */
+  opacity: 0.9;
+  color: #ffffff;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3px;
+}
+
+.testimonials .carousel-item {
+  text-align: center;
+}
+
+.testimonials__name {
+  /* Style for "JANE GALAD" */
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.testimonials__job {
+  opacity: 0.7;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 127px;
+}
+
+.testimonials .carousel-indicators .active {
+  height: 60px;
+  width: 60px;
+  margin-top: -7px;
+}
+
+.testimonials .carousel-indicators li {
+  background-color: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.testimonials__slider-img-1 {
+  background-image: url(../img/31.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonials__slider-img-2 {
+  background-image: url(../img/32.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonials__slider-img-3 {
+  background-image: url(../img/33.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonials__slider-img-4 {
+  background-image: url(../img/34.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonials__slider-img-5 {
+  background-image: url(../img/35.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 /* общее */
 h1 {
@@ -381,8 +464,13 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
 
-  /* .card-deck {
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
+  .testimonials .carousel-indicators li {
+    width: 33px;
+    height: 33px;
+  }
+
+  .testimonials .carousel-indicators .active {
+    height: 50px;
+    width: 50px;
+  }
 }

@@ -5,3 +5,7 @@ $(function () {
 	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height() - 10);
 	});
 });
+
+$('.carousel').carousel({
+  interval: 25000000
+});
