@@ -7,5 +7,5 @@ $(function () {
 });
 
 $('.carousel').carousel({
-  interval: 25000000
+  interval: 2500
 });
